@@ -1,0 +1,13 @@
+{
+  "name": "vertexit/php-cs",
+  "description": "Vertex IT shared PHP style rules for PHP-CS-Fixer",
+  "license": "MIT",
+  "require": {
+    "friendsofphp/php-cs-fixer": "^2.0"
+  },
+  "autoload": {
+    "files": [
+      "./src/helpers.php"
+    ]
+  }
+}
