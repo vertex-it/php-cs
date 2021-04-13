@@ -1,6 +1,6 @@
 <?php
 
-namespace VertexIT/PHPCS;
+namespace VertexIT;
 
 use PhpCsFixer\Config;
 use PhpCsFixer\Finder;
