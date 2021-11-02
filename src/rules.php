@@ -15,7 +15,7 @@ return [
     'braces' => true,
     'cast_spaces' => true,
     'class_attributes_separation' => [
-        'elements' => ['method']
+        'elements' => ['method' => 'one']
     ],
     'class_definition' => true,
     'concat_space' => [
@@ -25,7 +25,7 @@ return [
     'elseif' => true,
     'encoding' => true,
     'full_opening_tag' => true,
-    'fully_qualified_strict_types' => true, // added by Shift
+    'fully_qualified_strict_types' => true,
     'function_declaration' => true,
     'function_typehint_space' => true,
     'heredoc_to_nowdoc' => true,
@@ -35,10 +35,10 @@ return [
     'linebreak_after_opening_tag' => true,
     'line_ending' => true,
     'lowercase_cast' => true,
-    'constant_case' => ['case' => 'lower'],
+    'constant_case' => true,
     'lowercase_keywords' => true,
-    'lowercase_static_reference' => true, // added from Symfony
-    'magic_method_casing' => true, // added from Symfony
+    'lowercase_static_reference' => true,    
+    'magic_method_casing' => true,
     'magic_constant_casing' => true,
     'method_argument_space' => true,
     'native_function_casing' => true,
@@ -80,11 +80,13 @@ return [
     'no_whitespace_before_comma_in_array' => true,
     'no_whitespace_in_blank_line' => true,
     'normalize_index_brace' => true,
-    'not_operator_with_successor_space' => true,
+    'not_operator_with_successor_space' => false,
     'object_operator_without_whitespace' => true,
-    'ordered_imports' => ['sortAlgorithm' => 'alpha'],
+    'ordered_imports' => ['sort_algorithm' => 'alpha'],
     'phpdoc_indent' => true,
+    'general_phpdoc_tag_rename' => true,
     'phpdoc_inline_tag_normalizer' => true,
+    'phpdoc_tag_type' => true,
     'phpdoc_no_access' => true,
     'phpdoc_no_package' => true,
     'phpdoc_no_useless_inheritdoc' => true,
@@ -98,7 +100,7 @@ return [
     'psr_autoloading' => true,
     'self_accessor' => true,
     'short_scalar_cast' => true,
-    'simplified_null_return' => false, // disabled by Shift
+    'simplified_null_return' => false,
     'single_blank_line_at_eof' => true,
     'single_blank_line_before_namespace' => true,
     'single_class_element_per_statement' => true,
@@ -113,11 +115,12 @@ return [
     'switch_case_semicolon_to_colon' => true,
     'switch_case_space' => true,
     'ternary_operator_spaces' => true,
-    'trailing_comma_in_multiline' => ['elements' => ['arrays']],
+    'trailing_comma_in_multiline' => true,
     'trim_array_spaces' => true,
     'unary_operator_spaces' => true,
     'visibility_required' => [
         'elements' => ['method', 'property']
     ],
     'whitespace_after_comma_in_array' => true,
+    'no_unused_imports' => true,
 ];
