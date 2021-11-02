@@ -15,15 +15,4 @@ $finder = Finder::create()
     );
 
 
-return styles($finder);
-
-function styles(Finder $finder, array $rules = []): Config {
-    $rules = array_merge(require __DIR__.'/rules.php', $rules);
-
-    $config = new Config();
-
-    return $config
-        ->setFinder($finder)
-        ->setRiskyAllowed(true)
-        ->setRules($rules);
-}
+return VertexIT\styles($finder);
