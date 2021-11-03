@@ -1,7 +1,6 @@
 <?php
 
 use PhpCsFixer\Finder;
-use PhpCsFixer\Config;
 
 $finder = Finder::create()
     ->in(
