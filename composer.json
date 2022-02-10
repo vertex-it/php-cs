@@ -3,7 +3,7 @@
   "description": "Vertex IT shared PHP style rules for PHP-CS-Fixer",
   "license": "MIT",
   "require": {
-    "friendsofphp/php-cs-fixer": "v3.2.1"
+    "friendsofphp/php-cs-fixer": "v3.6.0"
   },
   "autoload": {
     "files": [
