@@ -1,10 +1,11 @@
 <?php
 
-// last reviewed: v1.1.4
+// last reviewed: v1.1.8
 return [
     'array_syntax' => ['syntax' => 'short'],
     'array_indentation' => true,
     'align_multiline_comment' => true,
+    'assign_null_coalescing_to_coalesce_equal' => true,
     'binary_operator_spaces' => [
         'default' => 'single_space',
     ],
@@ -19,6 +20,7 @@ return [
         'elements' => ['method' => 'one', 'trait_import' => 'none'],
     ],
     'class_definition' => true,
+    'combine_consecutive_unsets' => true,
     'concat_space' => [
         'spacing' => 'one',
     ],
@@ -89,8 +91,9 @@ return [
     'object_operator_without_whitespace' => true,
     'ordered_imports' => ['sort_algorithm' => 'alpha'],
     'ordered_class_elements' => true,
-    'phpdoc_indent' => true,
     'general_phpdoc_tag_rename' => true,
+    'phpdoc_align' => ['align' => 'left'],
+    'phpdoc_indent' => true,
     'phpdoc_inline_tag_normalizer' => true,
     'phpdoc_tag_type' => true,
     'phpdoc_no_access' => true,
@@ -103,6 +106,9 @@ return [
     'phpdoc_trim' => true,
     'phpdoc_types' => true,
     'phpdoc_var_without_name' => true,
+    'php_unit_method_casing' => ['case' => 'snake_case'],
+    'php_unit_test_annotation' => ['style' => 'annotation'],
+    'php_unit_test_case_static_method_calls' => ['call_type' => 'self'],
     'psr_autoloading' => true,
     'self_accessor' => true,
     'short_scalar_cast' => true,
@@ -116,9 +122,10 @@ return [
         'comment_types' => ['hash'],
     ],
     'single_quote' => true,
-    'single_trait_insert_per_statement' => true,
+    'single_trait_insert_per_statement' => false,
     'space_after_semicolon' => true,
     'standardize_not_equals' => true,
+    'standardize_increment' => true,
     'simple_to_complex_string_variable' => true,
     'switch_case_semicolon_to_colon' => true,
     'switch_case_space' => true,
